@@ -10,17 +10,20 @@ const Myprojects = () => {
         {
         id:1,
         projectname:'Daraz-Clone App',
-        image:daraz
+        image:daraz,
+        link:'https://utshavud.github.io/Daraz-Clone/'
     },
     {
         id:2,
         projectname:'Suffle-And-Solve',
-        image:game
+        image:game,
+        link:'https://utshavud.github.io/SuffleAndSolve/'
     },
     {
         id:3,
         projectname:'To-do-List App',
-        image:todo
+        image:todo,
+        link:'https://utshavud.github.io/To-do-list/'
     }
 ]
 
@@ -33,7 +36,7 @@ const Myprojects = () => {
 <div className='px-10 flex items-center justify-center'>
 <div className='grid grid-cols-3 place-items-center place-content-center gap-10'>
     {project.map((item)=>(
-        <Card key={item.id} projectname={item.projectname} image={item.image}  />
+        <Card key={item.id} projectname={item.projectname} image={item.image} link={item.link}  />
     ))}
 </div>
 </div>
